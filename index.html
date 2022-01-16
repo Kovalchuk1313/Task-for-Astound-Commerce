@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>For Gamers by Gamers</title>
+</head>
+<body>
+    <main class="main-container">
+        <div class="container">
+            <h1 class="title title--mobile">For gamers by gamers tee</h1>
+        </div>
+
+        <div class="base-content">
+            <div class="item-image">
+                <img class="item-image" src="images/hoodie.png" alt="Grey hoodie">
+            </div>
+
+            <section class="details container">
+                <h1 class="title title--desktop">For gamers by gamers tee</h1>
+
+                <div class="item-number">Item #: 701642853695</div>
+
+                <div class="price">
+                    $<span class="price--crossed">29.50</span>
+                    <span class="price--red"> $19.99</span>
+                </div>
+
+                <div class="stars-n-share">
+                    <div class="stars">
+                        <div class="stars__star"></div>
+                        <div class="stars__star"></div>
+                        <div class="stars__star"></div>
+                        <div class="stars__star"></div>
+                        <div class="stars__star stars__star--unactive"></div>
+                    </div>
+
+                    <div class="share">
+                        <span onclick="toggleSharePanel();" class="share__title">Share it!</span>
+
+                        <section id="sharePanel" class="social social--hidden">
+                            <div class="social__item circle">
+                                <img src="images/fb.png" alt="Facebook">
+                            </div>
+                            <div class="social__item circle">
+                                <img src="images/tw.png" alt="Twitter">
+                            </div>
+                            <div class="social__item circle">
+                                <img src="images/pinterest.png" alt="Pinterest">
+                            </div>
+                            <div class="social__item circle">
+                                <img src="images/yt.png" alt="Youtube">
+                            </div>
+                            <div onclick="toggleSharePanel();" class="social__item social__item--close">
+                                <img src="images/cross.png" alt="Close button">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <h3 class="config-title config-title--tablet">Details:</h3>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+
+                <h3 class="config-title config-title--mobile">Select a size:</h3>
+                <section class="sizes__wrapper">
+                    <h3 class="config-title config-title--no-mobile">Size:</h3>
+                    <div class="sizes">
+                        <div class="sizes__item circle">XS</div>
+                        <div class="sizes__item circle">S</div>
+                        <div class="sizes__item circle">M</div>
+                    </div>
+                </section>
+
+                <h3 class="config-title config-title--mobile">Select a color:</h3>
+                <section class="colors__wrapper">
+                    <h3 class="config-title config-title--no-mobile">Color:</h3>
+                    <div class="colors">
+                        <div class="colors__color colors__color--1 circle"></div>
+                        <div class="colors__color colors__color--2 circle"></div>
+                        <div class="colors__color colors__color--3 circle"></div>
+                        <div class="colors__color colors__color--4 circle"></div>
+                    </div>
+                </section>
+                <button class="button" type="button">Add to card</button>
+            </section>
+        </div>
+
+        <div class="container container--relative">
+            <h2 class="addition__title">You may also like</h2>
+
+            <button type="button" class="addition__slider addition__slider--prev"></button>
+            <button type="button" class="addition__slider addition__slider--next"></button>
+
+            <section class="addition">
+                <div class="addition__card">
+                    <div class="addition__image-wrapper">
+                        <img class="addition__image" src="images/catalog/tee.png" alt="Tee">
+                        <div class="addition__price addition__price--sale">$19.99</div>
+                    </div>
+                    <p class="addition__name">For gamers by gamers tee</p>
+                </div>
+                                
+                <div class="addition__card">
+                    <div class="addition__image-wrapper">
+                        <img class="addition__image" src="images/catalog/hoodie.png" alt="Tee">
+                        <div class="addition__price">$49.99</div>
+                    </div>
+                    <p class="addition__name">Pro gamer slash hoodie</p>
+                </div>
+                                
+                <div class="addition__card">
+                    <div class="addition__image-wrapper">
+                        <img class="addition__image" src="images/catalog/tee2.png" alt="Tee">
+                        <div class="addition__price">$24.99</div>
+                    </div>
+                    <p class="addition__name">Spectroom gamer tee</p>
+                </div>
+                                
+                <div class="addition__card">
+                    <div class="addition__image-wrapper">
+                        <img class="addition__image" src="images/catalog/tee3.png" alt="Tee">
+                        <div class="addition__price addition__price--sale">$19.99</div>
+                    </div>
+                    <p class="addition__name">Gaming for good tee</p>
+                </div>
+                                
+                <div class="addition__card">
+                    <div class="addition__image-wrapper">
+                        <img class="addition__image" src="images/catalog/hoodie2.png" alt="Tee">
+                        <div class="addition__price">$60.00</div>
+                    </div>
+                    <p class="addition__name">Spectroom web hoodie</p>
+                </div>
+                                
+                <div class="addition__card">
+                    <div class="addition__image-wrapper">
+                        <img class="addition__image" src="images/catalog/hoodie3.png" alt="Tee">
+                        <div class="addition__price">$54.00</div>
+                    </div>
+                    <p class="addition__name">Spectroom varsity hoodie</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
